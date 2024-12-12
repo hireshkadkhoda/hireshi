@@ -26,7 +26,7 @@ jobs:
         STICKER=$(sed -n "${RAND}p" stickers.txt)
         echo "STICKER=$STICKER" >> $GITHUB_ENV
 
-    - name: Pull latest changes
+    - name: Pull  latest changes
       run: |
         git pull origin main --rebase
 
